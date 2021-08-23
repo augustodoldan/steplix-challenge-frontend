@@ -18,7 +18,6 @@ const InsertCurrency = () => {
       value: value,
       id_currency: crypto,
     };
-    console.log(rate);
 
     const response = await fetch("http://localhost:3001/rates/", {
       method: "POST",
@@ -48,9 +47,7 @@ const InsertCurrency = () => {
         </div>
         <div className="insertCurrency__form--select">
           <select defaultValue="1" onChange={handlerSymbol}>
-            <option value="1">
-              BTC
-            </option>
+            <option value="1">BTC</option>
             <option value="2">ETH</option>
             <option value="3">ADA</option>
           </select>
@@ -66,7 +63,6 @@ const InsertCurrency = () => {
             max="2050-12-31"
             onChange={HandlerDate}
             className="insertCurrency__form--dateInput"
-            
           />
         </div>
         <div className="insertCurrency__textInput">
@@ -80,7 +76,9 @@ const InsertCurrency = () => {
           ></input>
         </div>
         <div className="insertCurrency__form--button">
-          <button className="insertCurrency__button" onClick={handlerClick}>ACTUALIZAR</button>
+          <button className="insertCurrency__button" onClick={handlerClick}>
+            ACTUALIZAR
+          </button>
         </div>
       </form>
     </div>

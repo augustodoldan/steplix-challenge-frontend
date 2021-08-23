@@ -16,14 +16,12 @@ const GetCurrency = () => {
     });
 
     const data = await response.json();
-    console.log(data);
     setDataCrypto(data);
   };
 
   const handlerSymbol = (e) => {
     const { value } = e.target;
     setCrypto(value);
-    console.log(value);
   };
 
   useEffect(test, [crypto]);
@@ -35,7 +33,10 @@ const GetCurrency = () => {
         <div className="getCrypto__title">
           <div>
             {dataCrypto ? (
-              <h1 className="getCrypto__title--content"> {dataCrypto.currency.description}</h1>
+              <h1 className="getCrypto__title--content">
+                {" "}
+                {dataCrypto.currency.description}
+              </h1>
             ) : (
               <div>
                 <h1 className="getCrypto__title--contentFirst">CRYPTO!</h1>
