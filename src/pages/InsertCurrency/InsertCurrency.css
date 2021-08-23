@@ -1,0 +1,173 @@
+.insertCurrency__form {
+  display: grid;
+  grid-template-rows: 60px 1fr 1fr 1fr 1fr;
+  grid-template-columns: 30% 70%;
+  grid-gap: 5px;
+  height: 80vh;
+  font-size: 30pt;
+  margin-top: 40px;
+}
+.insertCurrency__textSymbol {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding-left: 15vw; 
+
+}
+.insertCurrency__textDate{
+  grid-column-start: 1;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  padding-left: 15vw; 
+
+}
+
+.insertCurrency__form--date{
+  grid-column-start: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.insertCurrency__textInput{
+  grid-column-start: 1;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  padding-left:  15vw; 
+}
+.insertCurrency__form--value{
+  grid-column-start: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.insertCurrency__form--button{
+  grid-column-start: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.insertCurrency__form--select {
+  max-width: 250px;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  position: relative;
+  text-align-last: center;
+
+}
+
+.insertCurrency__form--select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 32.5vw;
+  cursor: pointer;
+  padding: 7px 10px;
+  margin-top: 38px;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: #FFD791;
+  font-size: 1em;
+  color: #311847;
+  font-family: "Quicksand", sans-serif;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.25s ease;
+  
+}
+.insertCurrency__form--select select:hover {
+  background: #64e8a4;
+}
+
+
+
+.insertCurrency__form--dateInput {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  width: 30vw;  
+  cursor: pointer;
+  padding: 7px 10px;
+  margin-top: 38px;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: #FFD791;
+  font-size: 1em;
+  color: #311847;
+  font-family: "Quicksand", sans-serif;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.25s ease;
+  text-align-last: center;
+  
+}
+.insertCurrency__form--dateInput:hover{
+  background: #64e8a4;
+}
+
+.insertCurrency__form--inputValue {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  width: 30vw;
+  cursor: pointer;
+  padding: 7px 10px;
+  margin-top: 38px;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: #FFD791;
+  font-size: 1em;
+  color: #311847;
+  font-family: "Quicksand", sans-serif;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.25s ease;
+  text-align-last: center;
+}
+.insertCurrency__form--inputValue:hover{
+background: #64e8a4;
+}
+
+.insertCurrency__button {
+	box-shadow: 3px 0px 11px -3px #899599;
+	background-color:#1E91D6;
+	border-radius:14px;
+	border:1px solid #4d484d;
+	display:inline-block;
+	cursor:pointer;
+	color:white;
+	font-size:20pt;
+	padding:12px 44px;
+	text-decoration:none;
+	text-shadow:0px 0px 44px #e1e2ed;
+  width: 32vw;
+  height: 10vh;
+}
+
+ .insertCurrency__button:hover {
+	background:linear-gradient(to bottom, #9e7682 5%, #72A1E5 100%);
+	background-color:#bab1ba;
+  color:#ffd791;
+  font-weight: bold;
+
+}
+.insertCurrency__button:active {
+	position:relative;
+	top:1px;
+}
+
+.insertCurrency__textInput, .insertCurrency__textDate, .insertCurrency__textSymbol{
+  color:#311847;
+  font-weight: bold;
+}

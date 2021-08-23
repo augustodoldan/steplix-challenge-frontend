@@ -1,0 +1,85 @@
+.getCrypto__container {
+  display: grid;
+  grid-template-rows: 60px 1fr 1fr 1fr 1fr;
+  grid-template-columns: 30% 70%;
+  grid-gap: 5px;
+  height: 80vh;
+  font-size: 30pt;
+}
+.getCrypto__title {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  color: #64e8a4;
+  font-weight: border;
+}
+.getCrypto__title--contentFirst {
+  color: black;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.getCrypto__rate--text {
+  grid-column-start: 1;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.getCurrency__textSymbol {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.getCrypto__content--price {
+  grid-column-start: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  font-size: 45pt;
+  font-weight: bolder;
+}
+
+.getCrypto__title--content {
+  margin-top: 40px;
+  margin-bottom: 0;  
+  text-transform: capitalize;
+}
+
+.getCurrency__form--select {
+  max-width: 250px;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align-last: center;
+  padding-top: 30px;
+}
+
+.getCurrency__form--select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 32.5vw;
+  cursor: pointer;
+  padding: 7px 10px;
+  margin-top: 38px;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: #ffd791;
+  font-size: 1em;
+  color: #311847;
+  font-family: "Quicksand", sans-serif;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.25s ease;
+}
+.getCurrency__form--select select:hover {
+  background: #64e8a4;
+}
+
+.getCrypto__rate--text,
+.getCurrency__textSymbol {
+  font-size: 40pt;
+  padding-left: 50px;
+  color: #311847;
+  font-weight: bolder;
+}
